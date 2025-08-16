@@ -1,15 +1,33 @@
 {
   "name": "simple_chat_app_server",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
+  "description": "",
+  "main": "main.ts",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "dev": "nodemon src/main.ts",
+    "lint": "eslint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.12.3",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "ws": "^8.18.3"
   },
   "devDependencies": {
-    "typescript": "~5.8.3",
-    "vite": "^7.1.0"
+    "@eslint/js": "^9.33.0",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.2.1",
+    "@types/ws": "^8.18.1",
+    "eslint": "^9.33.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.1"
   }
 }
